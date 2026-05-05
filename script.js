@@ -9,7 +9,7 @@
 
     try {
       await navigator.clipboard.writeText(handle);
-      feedback.textContent = 'Handle copiado.';
+      feedback.textContent = 'copiado.';
     } catch {
       feedback.textContent = 'Cópia automática indisponível.';
     }
