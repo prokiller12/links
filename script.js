@@ -5,10 +5,10 @@
   if (!button || !feedback) return;
 
   button.addEventListener('click', async () => {
-    const handle = button.getAttribute('data-copy');
+    const copiado = button.getAttribute('data-copy');
 
     try {
-      await navigator.clipboard.writeText(handle);
+      await navigator.clipboard.writeText(copiado);
       feedback.textContent = 'copiado.';
     } catch {
       feedback.textContent = 'Cópia automática indisponível.';
